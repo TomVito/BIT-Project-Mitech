@@ -1,0 +1,49 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.74;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  visibility: visible;
+  color: #696969;
+  position: relative;
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+h1 {
+  font-size: 56px;
+}
+h6 {
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+.hero-bg {
+  background: #f4efe9;
+}
+.hero-text h6 {
+  color: #086ad8;
+  margin-bottom: 20px;
+}
+.hero-text-btn {
+  font-size: 15px;
+  font-weight: 500;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+  color: #ffffff;
+  background: #086ad8;
+  border-width: 1px;
+}
+.hero-image-2 {
+    position: relative;
+}
