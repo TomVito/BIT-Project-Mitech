@@ -45,5 +45,130 @@ a {
   border-width: 1px;
 }
 .hero-image-2 {
-    position: relative;
+  position: relative;
+}
+
+.our-services {
+  background: #f8f8f8;
+}
+.our-services-text {
+  text-align: center;
+}
+.our-services-text h6 {
+  color: #ababab;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.our-services-text h3 {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0 auto;
+  line-height: 1.41;
+}
+.text-color-primary {
+  color: #086ad8;
+}
+.card-text h5 {
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+.our-services-card {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 30px 63px;
+}
+.card-arrow {
+  position: absolute;
+  bottom: -30px;
+  left: 42%;
+}
+.arrow-dot {
+  background: #e7c8b9;
+  border-radius: 50%;
+  padding: 10px;
+}
+.las {
+  color: white;
+  font-size: 32px;
+}
+.our-services-cards-footer {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 800;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+.card-arrow:hover .arrow-dot {
+  background: #086ad8;
+}
+.our-services-cards-footer a {
+  border-bottom: solid 1px rgb(192, 191, 191);
+}
+.our-services-cards-footer a:hover {
+  border-bottom: solid 1px #086ad8;
+}
+.our-company {
+  background: url(https://demo.hasthemes.com/mitech-preview/assets/images/patterns/mitech-home-infotechno-section-company-bg.png);
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+.our-experience-text h6 {
+  text-transform: uppercase;
+  color: #ababab;
+  font-size: 14px;
+  font-weight: 700;
+}
+.our-experience-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.title i.las {
+  color: black;
+  float: right;
+}
+h6.title {
+  font-size: 24px;
+  font-weight: 800;
+}
+.number {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-right: 10px;
+  min-width: 45px;
+  color: #ababab;
+  float: left;
+}
+.title {
+  border-top: 2px solid #ededed;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-top: 14px;
+  padding-top: 20px;
+  border-top: 2px solid #ededed;
+  padding-right: 15px;
+}
+.list-item {
+  padding-bottom: 60px;
+}
+.title-wrap {
+  overflow: hidden;
+}
+.list-item:hover h6 {
+  color: #086ad8;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.list-item:hover .number {
+  color: #086ad8;
+}
+.list-item:hover i {
+  color: #086ad8;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }

@@ -1,0 +1,92 @@
+.brand-slide:hover .brand-img-1 {
+  display: none;
+}
+.brand-slide .brand-img-1-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-1-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-2 {
+  display: none;
+}
+.brand-slide .brand-img-2-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-2-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-3 {
+  display: none;
+}
+.brand-slide .brand-img-3-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-3-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-4 {
+  display: none;
+}
+.brand-slide .brand-img-4-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-4-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-5 {
+  display: none;
+}
+.brand-slide .brand-img-5-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-5-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-6 {
+  display: none;
+}
+.brand-slide .brand-img-6-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-6-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-7 {
+  display: none;
+}
+.brand-slide .brand-img-7-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-7-hover {
+  display: block;
+}
+.brand-slide:hover .brand-img-8 {
+  display: none;
+}
+.brand-slide .brand-img-8-hover {
+  display: none;
+}
+.brand-slide:hover .brand-img-8-hover {
+  display: block;
+}
+.slick-slider img {
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.brand-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slide {
+  height: 130px;
+}
+.slick-slider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
