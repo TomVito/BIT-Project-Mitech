@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  $(".slick-slider").slick({
+jQuery(document).ready(function () {
+  jQuery(".slick-slider").slick({
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mitech</title>
+    <link rel="stylesheet" href="assets/css/slick/slick-slide.css" />
     <link rel="stylesheet" href="assets/css/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/slick/slick-theme.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,7 +17,6 @@
     />
     <link rel="stylesheet" href="assets/css/style-responsive.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/slick/slick-slide.css" />
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -28,6 +29,41 @@
     />
   </head>
   <body>
+    <div id="offcanvasAtidarymas" class="offcanvas-popup-container">
+      <div class="actions-toolbar">
+        <div class="toolbar-inner">
+          <ul>
+            <li>
+              <a
+                href="#"
+                id="atidarymoNuoroda"
+                class="link-icon"
+                data-toolbar="Quick options"
+                >Link</a
+              >
+            </li>
+            <li>
+              <a href="#" class="wheel-icon" data-toolbar="Support center"
+                >Link</a
+              >
+            </li>
+            <li>
+              <a href="#" class="wheel-icon" data-toolbar="Purchase Mi-tech"
+                >Link</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel-container">
+        <div class="panel-inner">
+          <h1>
+            IT Solutions Mitech - Technology, IT Solutions & Services Html5
+            Template
+          </h1>
+        </div>
+      </div>
+    </div>
     <div class="hero hero-bg">
       <div class="container">
         <div class="row align-items-center">
@@ -42,20 +78,38 @@
               <p class="mt-3">
                 Highly Tailored IT Design, Management & Support Services.
               </p>
-              <div class="hero-button mt-5">
-                <a href="#" class="hero-text-btn pb-3 pt-3 ps-4 pe-4"
-                  >Get details</a
-                >
+              <div class="buttonai d-flex align-items-center">
+                <div class="hero-button mt-5">
+                  <a
+                    href="#"
+                    class="hero-text-btn pb-3 pt-3 ps-4 pe-4"
+                    id="btn-hero"
+                    >Get details</a
+                  >
+                </div>
+                <div class="hero-button mt-5 btn2 ms-2">
+                  <a
+                    href="#"
+                    class="hero-text-btn pb-3 pt-3 ps-4 pe-4"
+                    id="btn2-hero"
+                    >Hide Details</a
+                  >
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 relative">
             <div class="hero-images mt-3">
               <div class="hero-image-1 position-absolute">
-                <img class="img-fluid" src="assets/img/under-hero.png" alt />
+                <img class="img-fluid" id="img-under" src="assets/img/under-hero.png" alt />
               </div>
               <div class="hero-image-2">
-                <img class="img-fluid" src="assets/img/hero.png" alt />
+                <img
+                  class="img-fluid"
+                  id="img-hero"
+                  src="assets/img/hero.png"
+                  alt
+                />
               </div>
             </div>
           </div>
@@ -219,11 +273,11 @@
                       </p>
                     </div>
                     <div class="card-arrow">
-                      <a href="#">
-                        <div class="arrow-dot">
+                      <div class="arrow-dot">
+                        <a href="#">
                           <i class="las la-long-arrow-alt-right"></i>
-                        </div>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -244,11 +298,11 @@
                       </p>
                     </div>
                     <div class="card-arrow">
-                      <a href="#">
-                        <div class="arrow-dot">
+                      <div class="arrow-dot">
+                        <a href="#">
                           <i class="las la-long-arrow-alt-right"></i>
-                        </div>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -269,11 +323,11 @@
                       </p>
                     </div>
                     <div class="card-arrow">
-                      <a href="#">
-                        <div class="arrow-dot">
+                      <div class="arrow-dot">
+                        <a href="#">
                           <i class="las la-long-arrow-alt-right"></i>
-                        </div>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -314,7 +368,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 ml-auto">
+            <div class="col-lg-5 ml-auto mb-5">
               <div class="our-experience-list">
                 <div class="list-item">
                   <a class="link" href="#">
@@ -363,16 +417,29 @@
         </div>
       </div>
     </div>
+    <div id="slapukai" class="slapukai-container">
+      <h2>ŠIOJE SVETAINĖJE NAUDOJAMI SLAPUKAI</h2>
+      <p>
+        Naudojame slapukus, kad galėtume suasmeninti turinį bei skelbimus,
+        teikti visuomeninės medijos funkcijas ir analizuoti srautą. Be to,
+        svetainės naudojimo informaciją bendriname su visuomeninės medijos,
+        reklamavimo ir analizės partneriais, kurie gali ją pridėti prie kitos
+        jūsų pateiktos arba naudojant paslaugas surinktos informacijos.
+      </p>
+      <button class="submit" id="sutinku">Sutinku</button>
+      <a href="#" class="dropdown">Daugiau informacijos</a>
+    </div>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
