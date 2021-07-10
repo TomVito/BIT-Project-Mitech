@@ -272,3 +272,65 @@ h6.title {
 .btn2-hero-show {
   display: block;
 }
+.infotechno-video {
+  background-image: url(https://demo.hasthemes.com/mitech-preview/assets/images/bg/home-infotechno-video-intro-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.infotechno-video h2 {
+  line-height: 1.34;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 65px;
+  font-size: 48px;
+}
+.video-text {
+  padding-top: 10px;
+  margin-top: 0;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.45;
+}
+.video-play-icon {
+  content: "";
+  position: absolute;
+  top: 37px;
+  left: 41px;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid #fff;
+  border-top-width: 12px;
+  border-bottom-width: 12px;
+  border-left-width: 19px;
+  border-left-color: #ffffff;
+}
+.video-play {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  background: #086ad8;
+  -webkit-box-shadow: 0 2px 41px 0 rgb(91 99 254 / 36%);
+  box-shadow: 0 2px 41px 0 rgb(91 99 254 / 36%);
+  border-radius: 50%;
+  -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+  -o-transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+  transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+  -webkit-box-shadow: 0 20px 30px rgb(0 0 0 / 7%);
+  box-shadow: 0 20px 30px rgb(0 0 0 / 7%);
+}
+.video-popup {
+  margin-left: 25px;
+}
