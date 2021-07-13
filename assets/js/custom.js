@@ -10,7 +10,7 @@ document.getElementById("atidarymoNuoroda").onclick = function () {
   }
 };
 
-// close cookies
+// close cookies panel
 
 /*
 
@@ -22,7 +22,44 @@ document.getElementById("sutinku").onclick = function () {
 
 */
 
-// jQuery animations
+// cookies
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  let expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 30);
+    }
+  }
+}
+
+//jQuery click function and animations
 
 jQuery(document).ready(function () {
   jQuery("#sutinku").click(function () {
@@ -81,5 +118,28 @@ jQuery(document).ready(function () {
       2000,
       "linear"
     );
+  });
+
+  //loading screen 'curtains'
+
+  jQuery(document).ready(function () {
+    jQuery(".left-part").animate({ width: "0px" });
+    jQuery(".right-part").animate({ width: "0px" });
+
+    setTimeout(function () {
+      $(".animate-box").hide();
+    }, 2000);
+  });
+
+  //show or hide arrow up
+
+  jQuery(document).scroll(function () {
+    var height = jQuery(this).scrollTop();
+    if (height > 1500  ) {
+      jQuery("#scroll-top").addClass("show");
+    }
+    if (height < 750) {
+      jQuery("#scroll-top").removeClass("show");
+    }
   });
 });

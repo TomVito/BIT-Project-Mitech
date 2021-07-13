@@ -18,6 +18,7 @@ body {
   left: 0;
   color: #fff;
   opacity: 0.8;
+  display: none;
 }
 
 .slapukai-container.closed {
@@ -333,4 +334,77 @@ h6.title {
 }
 .video-popup {
   margin-left: 25px;
+}
+.animate-box {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+}
+.animate-box .left-part {
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s;
+  float: left;
+}
+.animate-box .right-part {
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s;
+  float: right;
+}
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: -60px;
+  z-index: 999;
+  -webkit-box-shadow: 0 30px 50px rgb(0 0 0 / 3%);
+  box-shadow: 0 30px 50px rgb(0 0 0 / 3%);
+  display: block;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #086ad8;
+  background-size: 200% auto;
+  background-position: left center;
+  color: #ffffff;
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  overflow: hidden;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+}
+.scroll-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.arrow-top {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.arrow-bottom {
+  -webkit-transform: translate(-50%, 80px);
+  -ms-transform: translate(-50%, 80px);
+  transform: translate(-50%, 80px);
 }
