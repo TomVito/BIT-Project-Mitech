@@ -10,6 +10,28 @@ document.getElementById("atidarymoNuoroda").onclick = function () {
   }
 };
 
+// counter
+
+const counters = document.querySelectorAll(".value");
+const speed = 500;
+
+counters.forEach((counter) => {
+  const animate = () => {
+    const value = +counter.getAttribute("number");
+    const data = +counter.innerText;
+
+    const time = value / speed;
+    if (data < value) {
+      counter.innerText = Math.ceil(data + time);
+      setTimeout(animate, 1);
+    } else {
+      counter.innerText = value;
+    }
+  };
+
+  animate();
+});
+
 // close cookies panel
 
 /*
@@ -131,11 +153,11 @@ jQuery(document).ready(function () {
     }, 2000);
   });
 
-  //show or hide arrow up
+  //show or hide arrow up 'simple variantas is net'
 
   jQuery(document).scroll(function () {
     var height = jQuery(this).scrollTop();
-    if (height > 1500  ) {
+    if (height > 1500) {
       jQuery("#scroll-top").addClass("show");
     }
     if (height < 750) {

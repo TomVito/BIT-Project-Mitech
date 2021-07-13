@@ -18,7 +18,6 @@ body {
   left: 0;
   color: #fff;
   opacity: 0.8;
-  display: none;
 }
 
 .slapukai-container.closed {
@@ -135,6 +134,7 @@ a {
   background: #086ad8;
   border-width: 1px;
 }
+
 .hero-image-2 {
   position: relative;
 }
@@ -407,4 +407,20 @@ h6.title {
   -webkit-transform: translate(-50%, 80px);
   -ms-transform: translate(-50%, 80px);
   transform: translate(-50%, 80px);
+}
+.counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.value {
+  font-size: 120px;
+  display: block;
+  font-weight: bold;
+  color: #333333;
+}
+.counter-bg {
+  background: #fff;
 }
