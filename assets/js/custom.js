@@ -10,7 +10,9 @@ document.getElementById("atidarymoNuoroda").onclick = function () {
   }
 };
 
-// counter
+// counter js
+
+/*
 
 const counters = document.querySelectorAll(".value");
 const speed = 500;
@@ -153,7 +155,9 @@ jQuery(document).ready(function () {
     }, 2000);
   });
 
-  //show or hide arrow up 'simple variantas is net'
+  /*
+ 
+  //show or hide arrow up on scrool 'simple variantas is net'
 
   jQuery(document).scroll(function () {
     var height = jQuery(this).scrollTop();
@@ -164,4 +168,94 @@ jQuery(document).ready(function () {
       jQuery("#scroll-top").removeClass("show");
     }
   });
+  
+  */
+  
+  //jq counter
+
+  /*
+
+  jQuery('.counter').each(function () {
+    var $this = jQuery(this),
+      countTo = jQuery(this).data('count');
+
+    jQuery({ countNum: 0 }).animate({
+        countNum: countTo,
+      }, {
+        duration: 8000,
+        easing: 'linear',
+        step: function () {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+          $this.text(this.countNum);
+        }
+
+      });
+
+  });
+
+  */
+
+  //lango auksctis 
+
+  jQuery(window).on('scroll', function() {
+    let virsus          = jQuery(document).scrollTop();
+    let puslapioAukstis = jQuery(document).height();
+    let langoAukstis    = jQuery(window).height();
+    let bendras         = virsus + langoAukstis;
+   
+    //console.log(virsus);
+    //console.log(puslapioAukstis);
+    //console.log(langoAukstis);
+    ///console.log(bendras);
+
+    //add or remove class when scrolling
+
+    if(bendras == puslapioAukstis) {
+      jQuery('#scroll-top').addClass('show');
+    } 
+  
+    if(virsus + langoAukstis < puslapioAukstis - 800) {
+      jQuery('#scroll-top').removeClass('show');
+    }
+  
+    //counter pasiekus div
+
+    let counter = jQuery('.counter-wrap').position().top;
+
+    let uzsikrove = false;
+
+    if((virsus + langoAukstis) >= counter) {
+
+      if(!uzsikrove) {
+
+        jQuery('.counter').each(function () {
+        var $this = jQuery(this),
+          countTo = jQuery(this).data('count');
+    
+        jQuery({ countNum: 0 }).animate({
+            countNum: countTo,
+          }, {
+            duration: 3000,
+            easing: 'linear',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+            },
+    
+          });
+    
+      });
+      
+    }
+
+    uzsikrove = true;
+    
+    }
+
+  });
+
 });

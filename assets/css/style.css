@@ -408,19 +408,19 @@ h6.title {
   -ms-transform: translate(-50%, 80px);
   transform: translate(-50%, 80px);
 }
-.counter {
+.counter-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50vh;
 }
 
-.value {
-  font-size: 120px;
+.counter {
+  padding: 48px;
+  font-size: 84px;
   display: block;
   font-weight: bold;
   color: #333333;
-}
-.counter-bg {
-  background: #fff;
+  border: solid 5px #ababab;
+  border-radius: 40px;
 }
