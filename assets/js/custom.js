@@ -226,7 +226,7 @@ jQuery(document).ready(function () {
 
     let uzsikrove = false;
 
-    if((virsus + langoAukstis) >= counter) {
+    if(((virsus + langoAukstis) +300) >= counter) {
 
       if(!uzsikrove) {
 
