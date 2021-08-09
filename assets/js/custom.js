@@ -259,3 +259,60 @@ jQuery(document).ready(function () {
   });
 
 });
+
+function randomSkaicius(min, max) { 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function randomString(length) {
+
+  let randomabecele = '';
+  let abecele = 'abcdefghijklmnopqrstuvwxyz';
+
+  for ( let i = 0; i < length; i++ ) {
+
+    randomabecele += abecele.charAt( Math.floor( Math.random() * abecele.length) );
+
+  }
+
+  return randomabecele;
+
+}
+
+let masyvas = [];
+
+
+
+for(let i = 0; i < 15; i++) {
+
+  let objektai = {
+  
+    miestas: randomString(10),
+    adresas: randomString(15),
+    likutis: randomSkaicius(1, 99)
+  
+    }
+
+    masyvas.push(objektai);
+
+}
+
+console.log(masyvas);
+
+document.querySelector('.panel-container').innerHTML += '<table id="nauja_lentele" class="paskutinelentele">' 
+                                                      + '<thead>' 
+                                                      + '<th>Miestas</th>' 
+                                                      + '<th>Adresas</th>' 
+                                                      + '<th>Prekių likutis</th>' 
+                                                      + '</thead>' 
+                                                      + '<tbody>' 
+                                                      + '</tbody>' 
+                                                      + '</table>';
+
+let paskutine_lentele = document.querySelector('.paskutinelentele > tbody');
+
+for(let i = 0; i < masyvas.length; i++) {
+
+  paskutine_lentele.innerHTML += '<tr><td>' + masyvas[i]['miestas'] + '</td>' + '<td>' + masyvas[i]['adresas'] + '</td>' + '<td>' + masyvas[i]['likutis'] + '</td>';
+  
+  }
